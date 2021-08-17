@@ -17,7 +17,7 @@ public class ShafaTestURL {
 //        String text =element.getText();
 //        System.out.println(text);
 //
-        
+
 //        List <WebElement> element6 = driver.findElements((By.xpath("//div[@class='_1Oikv8416VOZKJriT08h']//a")));
 //         Integer size = element6.size();
 //            System.out.println(size);
