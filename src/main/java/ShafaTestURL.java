@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import java.util.List;
 
 public class ShafaTestURL {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\WebDrayver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://shafa.ua/");
@@ -46,10 +46,39 @@ public class ShafaTestURL {
 //        System.out.println(size8);
 
 
+//        String currentPage=driver.getCurrentUrl();
+//        WebElement element9 = driver.findElements((By.xpath("//div[@class='_3FwHm0lcQOk3fn7nVlWL']//a"))).get(1);
+//        Actions actions = new Actions(driver);
+//        actions.moveToElement(element9).clickAndHold().release().build().perform();
+//        String newPage = driver.getCurrentUrl();
+//        if(currentPage.equals(newPage))
+//        {
+//            System.out.println("On Same Page");
+//
+//        }
+//        else
+//        {
+//            System.out.println("Ok");
+//        }
+
+//        String currentPage10 = driver.getCurrentUrl();
+//        WebElement element10 = driver.findElements((By.xpath("//div[@class='_1C8R7Ed8PZh8800Q5y1A']//a"))).get(0);
+//        Thread.sleep(2000);
+//        Actions actions10 = new Actions(driver);
+//        actions10.moveToElement(element10).click().perform();
+//        Thread.sleep(5000);
+//        String newPage10 = driver.getCurrentUrl();
+//        if (currentPage10.equals(newPage10)) {
+//            System.out.println("On Same Page");
+//
+//        } else {
+//            System.out.println("Ok");
+//        }
+
         String currentPage=driver.getCurrentUrl();
-        WebElement element9 = driver.findElements((By.xpath("//div[@class='_3FwHm0lcQOk3fn7nVlWL']//a"))).get(1);
+        WebElement element13 = driver.findElement((By.xpath("//div[@class='b-index-header__info']//button")));
         Actions actions = new Actions(driver);
-        actions.moveToElement(element9).clickAndHold().release().build().perform();
+        actions.moveToElement(element13).clickAndHold().release().build().perform();
         String newPage = driver.getCurrentUrl();
         if(currentPage.equals(newPage))
         {
@@ -61,8 +90,26 @@ public class ShafaTestURL {
             System.out.println("Ok");
         }
 
-
-
     }
-
 }
+
+
+//        String currentPage=driver.getCurrentUrl();
+//        WebElement element11 = driver.findElements((By.xpath("//div[@class='DfLiXtdKirLRjXqzIZ7j _9FyXaaDBJB6Q-Kz8GIsD']"))).get(0);
+//        Actions actions = new Actions(driver);
+//        actions.moveToElement(element11).clickAndHold().release().build().perform();
+//        String newPage = driver.getCurrentUrl();
+//        if(currentPage.equals(newPage))
+//        {
+//            System.out.println("On Same Page");
+//
+//        }
+//        else
+//        {
+//            System.out.println("Ok");
+//        }
+//
+//
+//    }
+//
+//}
