@@ -17,10 +17,7 @@ public class ShafaTestURL {
 //        String text =element.getText();
 //        System.out.println(text);
 //
-//        WebElement element1 = driver.findElements((By.xpath("//div[@class='b-section b-section_bg_brands']//h2"))).get(0);
-//        String text1 =element1.getText();
-//        System.out.println(text1);
-//
+        
 //        List <WebElement> element6 = driver.findElements((By.xpath("//div[@class='_1Oikv8416VOZKJriT08h']//a")));
 //         Integer size = element6.size();
 //            System.out.println(size);
@@ -111,17 +108,17 @@ public class ShafaTestURL {
 //        String text12 =element12.getText();
 //        System.out.println(text12);
 
-//        WebElement element15 = driver.findElement((By.xpath("//div[@class='b-more-products']//h2")));
+        WebElement element15 = driver.findElement((By.xpath("//div[@class='b-more-products']//h2")));
 //        String text15 = element15.getText();
+        System.out.println(element15);
+
+//        WebElement element16 = driver.findElement((By.xpath("//div[@class='b-product__seller']")));
+//        String text16 = element16.getText();
+//        System.out.println(text16);
+
+//        WebElement element15 = driver.findElements((By.xpath("//div[@class='b-product__seller']"))).get(0);
+//        String text15 =element15.getText();
 //        System.out.println(text15);
-
-        WebElement element16 = driver.findElement((By.xpath("//div[@class='b-product__seller']")));
-        String text16 = element16.getText();
-        System.out.println(text16);
-
-        WebElement element15 = driver.findElements((By.xpath("//div[@class='b-product__seller']"))).get(0);
-        String text15 =element15.getText();
-        System.out.println(text15);
 
     }
 
