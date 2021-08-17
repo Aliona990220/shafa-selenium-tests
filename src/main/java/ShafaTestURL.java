@@ -60,7 +60,7 @@ public class ShafaTestURL {
 //        {
 //            System.out.println("Ok");
 //        }
-
+//
 //        String currentPage10 = driver.getCurrentUrl();
 //        WebElement element10 = driver.findElements((By.xpath("//div[@class='_1C8R7Ed8PZh8800Q5y1A']//a"))).get(0);
 //        Thread.sleep(2000);
@@ -75,23 +75,6 @@ public class ShafaTestURL {
 //            System.out.println("Ok");
 //        }
 
-        String currentPage=driver.getCurrentUrl();
-        WebElement element13 = driver.findElement((By.xpath("//div[@class='b-index-header__info']//button")));
-        Actions actions = new Actions(driver);
-        actions.moveToElement(element13).clickAndHold().release().build().perform();
-        String newPage = driver.getCurrentUrl();
-        if(currentPage.equals(newPage))
-        {
-            System.out.println("On Same Page");
-
-        }
-        else
-        {
-            System.out.println("Ok");
-        }
-
-    }
-}
 
 
 //        String currentPage=driver.getCurrentUrl();
@@ -108,8 +91,39 @@ public class ShafaTestURL {
 //        {
 //            System.out.println("Ok");
 //        }
+
+//        String currentPage13 = driver.getCurrentUrl();
+//        WebElement element13 = driver.findElement((By.xpath("//div[@class='b-index-header__info']//button")));
+//        Actions actions13 = new Actions(driver);
+//        actions13.moveToElement(element13).clickAndHold().release().build().perform();
+//        String newPage13 = driver.getCurrentUrl();
+//        if(currentPage13.equals(newPage13))
+//        {
+//            System.out.println("On Same Page");
 //
-//
-//    }
-//
-//}
+//        }
+//        else
+//        {
+//            System.out.println("Ok");
+//        }
+
+//        WebElement element12 = driver.findElement((By.xpath("//div[@class='b-index-header__info']//span")));
+//        String text12 =element12.getText();
+//        System.out.println(text12);
+
+//        WebElement element15 = driver.findElement((By.xpath("//div[@class='b-more-products']//h2")));
+//        String text15 = element15.getText();
+//        System.out.println(text15);
+
+        WebElement element16 = driver.findElement((By.xpath("//div[@class='b-product__seller']")));
+        String text16 = element16.getText();
+        System.out.println(text16);
+
+        WebElement element15 = driver.findElements((By.xpath("//div[@class='b-product__seller']"))).get(0);
+        String text15 =element15.getText();
+        System.out.println(text15);
+
+    }
+
+
+}
