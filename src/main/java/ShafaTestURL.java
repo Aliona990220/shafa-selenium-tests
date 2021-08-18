@@ -58,11 +58,11 @@ public class ShafaTestURL {
 //            System.out.println("Ok");
 //        }
 //
-//        String currentPage10 = driver.getCurrentUrl();
-//        WebElement element10 = driver.findElements((By.xpath("//div[@class='_1C8R7Ed8PZh8800Q5y1A']//a"))).get(0);
-//        Thread.sleep(2000);
-//        Actions actions10 = new Actions(driver);
-//        actions10.moveToElement(element10).click().perform();
+        String currentPage10 = driver.getCurrentUrl();
+        WebElement element10 = driver.findElements((By.xpath("//div[@class='_1C8R7Ed8PZh8800Q5y1A']//a"))).get(2);
+        System.out.println(element10.getText() + "*****");
+        Actions actions10 = new Actions(driver);
+        actions10.moveToElement(element10).click().perform();
 //        Thread.sleep(5000);
 //        String newPage10 = driver.getCurrentUrl();
 //        if (currentPage10.equals(newPage10)) {
@@ -108,9 +108,9 @@ public class ShafaTestURL {
 //        String text12 =element12.getText();
 //        System.out.println(text12);
 
-        WebElement element15 = driver.findElement((By.xpath("//div[@class='b-more-products']//h2")));
+//        WebElement element15 = driver.findElement((By.xpath("//div[@class='b-more-products']//h2")));
 //        String text15 = element15.getText();
-        System.out.println(element15);
+//        System.out.println(element15);
 
 //        WebElement element16 = driver.findElement((By.xpath("//div[@class='b-product__seller']")));
 //        String text16 = element16.getText();
