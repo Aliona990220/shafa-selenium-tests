@@ -15,11 +15,18 @@ public class EnteringValuesIntoInputFields {
         Thread.sleep(3000);
         email.click();
         email.sendKeys("abcd@gmail.com");
-        email.clear();
+//        email.clear();
         WebElement password =  driver.findElements(By.xpath("//div[@class='container']//input")).get(1);
         password.click();
         password.sendKeys("123456abcdftry");
-        password.clear();
+//        password.clear();
+        WebElement login =  driver.findElement(By.xpath("//div[@class='form_content clearfix']//button"));
+//        login.click();
+        //Або команда:
+        login.submit();
+        
+        driver.close();
+
 
     }
 }
