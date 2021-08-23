@@ -11,7 +11,7 @@ public class SwitchingBetweenPopUps {
         String alertMessage = "";
 
         driver.get("http://jsbin.com/usidix/1");
-        driver.findElement(By.cssSelector("input[value=\"Go!\"]")).click();
+        driver.findElement(By.xpath("//input[@value='Go!']")).click();
         alertMessage = driver.switchTo().alert().getText();
         driver.switchTo().alert().accept();
 
