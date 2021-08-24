@@ -24,7 +24,7 @@ public class EnteringValuesIntoInputFields {
 //        login.click();
         //Або команда:
         login.submit();
-        
+
         driver.close();
 
 
