@@ -18,12 +18,12 @@ public class LoginToTheSite {
         WebElement email =  driver.findElements(By.xpath("//div[@class='_2ze0hXfd8Fj8W5fmqJC6']//input")).get(0);
         email.click();
         email.clear();
-        email.sendKeys("AlionaHavelia");
+        email.sendKeys("**********");
 
         WebElement password =  driver.findElements(By.xpath("//div[@class='_2ze0hXfd8Fj8W5fmqJC6']//input")).get(1);
         password.click();
         email.clear();
-        password.sendKeys("wbDcq");
+        password.sendKeys("******");
         WebElement exits =  driver.findElement(By.xpath("//div[@class='_2ze0hXfd8Fj8W5fmqJC6']//button"));
         exits.submit();
 

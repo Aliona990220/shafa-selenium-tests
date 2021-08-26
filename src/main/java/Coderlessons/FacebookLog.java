@@ -14,11 +14,11 @@ public class FacebookLog {
         Thread.sleep(3000);
         WebElement email =  driver.findElements(By.xpath("//div[@class='_5rut']//input")).get(6);
         email.click();
-        email.sendKeys("+380995682428");
+        email.sendKeys("+***********");
 
         WebElement password =  driver.findElements(By.xpath("//div[@class='_5rut']//input")).get(7);
         password.click();
-        password.sendKeys("021120");
+        password.sendKeys("********");
         WebElement exit =  driver.findElement(By.xpath("//div[@class='_2pie']//button"));
         exit.click();
 
