@@ -14,7 +14,7 @@ public class Option {
         WebElement radio1 = driver.findElement(By.id("vfb-7-1"));
         WebElement radio2 = driver.findElement(By.id("vfb-7-2"));
         radio1.click();
-        
+
         radio2.click();
     }
 }
