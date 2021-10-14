@@ -10,7 +10,6 @@ public class FacebookPasswordRecovery {
         System.setProperty("webdriver.chrome.driver", "C:\\WebDrayver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get(baseUrl);
-        Thread.sleep(3000);
         driver.findElement(By.xpath("//div[@class='l9j0dhe7 buofh1pr j83agx80 bp9cbjyn']//a")).click();
 
         if (driver.getTitle().equals("Facebook - log in or sign up")) {
