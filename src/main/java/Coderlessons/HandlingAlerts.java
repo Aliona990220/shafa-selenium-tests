@@ -21,7 +21,7 @@ public class HandlingAlerts {
 
         System.out.println(alertMessage);
         Thread.sleep(5000);
-        
+
         alert.accept();
     }
 }
