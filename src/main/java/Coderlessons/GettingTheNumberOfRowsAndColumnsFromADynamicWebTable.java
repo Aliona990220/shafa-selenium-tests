@@ -13,7 +13,7 @@ public class GettingTheNumberOfRowsAndColumnsFromADynamicWebTable {
         System.setProperty("webdriver.chrome.driver", "C:\\WebDrayver\\chromedriver.exe");
         wd= new ChromeDriver();
         wd.get("http://demo.guru99.com/test/web-table-element.php");
-        WebElement col = (WebElement) wd.findElements(By.xpath(".//*[@id=\"leftcontainer\"]/table/thead/tr/th"));
+        WebElement col = (WebElement) wd.findElements(By.xpath(".//*[@id='leftcontainer']/table/thead/tr/th"));
         System.out.println("No of cols are : " + ((List<?>) col).size());
         WebElement rows = (WebElement) wd.findElements(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr/td[1]"));
         System.out.println("No of rows are : " + ((List<?>) rows).size());
